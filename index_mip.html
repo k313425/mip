@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- Core CSS file -->
+	<link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
+
+</head>
+<body>
+<div id="content" class="content">
+	<div class="title fn-toe">写真：清爽的夏意 </div>
+	<div class="main">
+		<p>　　用青蓝调性的夏日<a style="display: contents;color:#666" href="https://tu.heiguang.com/works/12.html" id="keyword_style" target="_blank">写真</a>来应对这个季节……</p>
+		<p>&nbsp;</p>
+		<p style="text-align: center;"><img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111253506.jpg" style="_w: 600px; _h: 900px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111254743.jpg" style="_w: 600px; _h: 900px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111254116.jpg" style="_w: 600px; _h: 900px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111255180.jpg" style="_w: 600px; _h: 900px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111255627.jpg" style="_w: 600px; _h: 399px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111256126.jpg" style="_w: 600px; _h: 900px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111256299.jpg" style="_w: 600px; _h: 900px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111257258.jpg" style="_w: 600px; _h: 399px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111257167.jpg" style="_w: 600px; _h: 900px;" title="写真：清爽的夏意 "><br>
+			<img alt="写真：清爽的夏意 " src="https://imgwww.heiguang.net/uploadfile/2019/0524/20190524111258124.jpg" style="_w: 600px; _h: 399px;" title="写真：清爽的夏意 "></p>
+	</div>
+</div>
+
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/mip.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#content').find('img').each(function () {
+			// var imgel = $(this).clone();
+			var dom = '<mip-img popup alt="' + $(this).attr('alt') +
+				'" src="' + $(this).attr('src') +
+				'" style="' + $(this).attr('style') +
+				'" title="' + $(this).attr('title') +
+				'" ></mip-img>';
+			$(this).replaceWith(dom);
+			console.log(dom);
+		})
+	});
+</script>
+</body>
+</html>
